@@ -1,6 +1,6 @@
-body, header, head, footer, h1, h2, h3, p, i, ul, nav, section {
-    padding: 0px;
-    margin: 0px;
+* {
+    padding: 0;
+    margin: 0;
 }
 
 .dropdown-content a:hover {background-color: #838383;}
@@ -60,7 +60,6 @@ header {
 
 nav {
     background-color: #425e7e;
-    padding: 10px;
     text-align: center;
     width: 100%;
 }
