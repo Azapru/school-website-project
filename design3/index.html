@@ -4,30 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Max's Arcade</title>
-    <link rel="stylesheet" href="stulez.css">
-    <script src="1984.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="javascript.js"></script>
 </head>
 <body>
-    <div class="body_but_different">
-        <div class="top">
-            <p>Top text</p>
+    <div class="top">
+        <button onclick="dropdown()" style="background-color: black; position: relative; display: inline-block;"><img src="assets/arrow.png" alt="" width="100px" height="100px"></button>
+        <center><img width="200px" height="200px" src="assets/logo.png" alt="" id="logo" style="display: none;"></center>
+        <div id="wrap" class="h1_wrap">
+            <h1>Account</h1>
+            <h1>News</h1>
+            <h1>Socials</h1>
+            <h1>About Us</h1>
+            <h1>Contact Us</h1>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="wraps">
+            <p>Category</p>
+            <p>Category</p>
+            <p>Category</p>
         </div>
 
-        <div class="content">
-            <div class="box2"><p>Category</p></div>
-            <div class="box2"><p>Category</p></div>
-            <div class="box2"><p>Category</p></div>
-            <div class="box2"><p>Category</p></div>
-            <div class="box2" style="background-color: darkred;"><p>Random</p></div>
-            <div class="box2"><p>Category</p></div>
-            <div class="box2"><p>Category</p></div>
-            <div class="box2"><p>Category</p></div>
-            <div class="box2"><p>Category</p></div>
+        <div class="all_wrap">
+            <p>Category</p>
+            <p onclick="window.location = 'all_page'" style="border-color: red;">All</p>
+            <p>Category</p>
         </div>
 
-        <div class="footer">
-            <p>© 2023 Maximus Arcade. All Rights Reserved</p>
+        <div class="wraps">
+            <p>Category</p>
+            <p>Category</p>
+            <p>Category</p>
         </div>
+    </div>
+
+    <div class="footer">
+        <img src="assets/logo_only_text.png" height="50x" width="200px" style="margin-top: 20px;" alt=""> 
+        <p>© 2023 <br> Max's Arcade Corporation. <br> All Rights Reserved.</p>
+        <img src="assets/Yon.png" height="120px" style="margin-left: 70%; visibility: hidden;" alt="" id="Yon" onclick="window.location = 'https://youtu.be/bjKLjGbL-W0?feature=shared&t=36'">
     </div>
 </body>
 </html>
