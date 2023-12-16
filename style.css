@@ -5,14 +5,14 @@
 
 .dropdown-content a:hover {background-color: #838383;}
 .dropdown:hover .dropdown-content {display: block;}
-.dropdown:hover .dropbtn {background-color: #2572b1;}
+.dropdown:hover .dropbtn {background-color: #41377a;}
 
 .dropbtn {
-    background-color: #2689b8;
-    color: white;
+    background-color: #2B2451;
+    color: #a7c0ff;
     padding: 16px;
     font-size: 16px;
-    border: none;
+    border: 2px #6B87CC solid;
     border-radius: 15px;
 }
 
@@ -38,28 +38,34 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #555a61;
+    background-color: #001223;
+}
+
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 button {
-    background-color: #2689b8;
-    color: white;
+    background-color: #2B2451;
+    color: #a7c0ff;
     padding: 16px;
     font-size: 16px;
-    border: none;
+    border: 2px #6B87CC solid;
     border-radius: 15px;
 }
 
 header {
-    background-color: #454f72;
+    background-color: #32245d;
     color: #fff;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-align: center;
 }
 
 nav {
-    background-color: #425e7e;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color: #201640;
     text-align: center;
     width: 100%;
 }
