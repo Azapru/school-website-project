@@ -37,6 +37,10 @@
     display: block;
 }
 
+.social-icons {
+    width: 32px;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #555a61;
