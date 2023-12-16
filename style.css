@@ -37,10 +37,6 @@
     display: block;
 }
 
-.social-icons {
-    width: 32px;
-}
-
 body {
     background-color: #001223;
 }
@@ -105,4 +101,19 @@ h1 {
 p {
     color: rgb(255, 255, 255);
     padding: 15px;
+}
+
+.social-icons {
+    width: 48px;
+    margin: 4px;
+    padding: 6px;
+    border: white 2px solid;
+    border-radius: 16px;
+    background-color: #201640;
+}
+
+.socials {
+    text-align: right;
+    position: fixed;
+    width: 100%;
 }
