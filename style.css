@@ -37,6 +37,10 @@
     display: block;
 }
 
+.social-icons {
+    width: 32px;
+}
+
 body {
     background-color: #001223;
 }
