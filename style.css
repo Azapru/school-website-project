@@ -84,6 +84,16 @@ img {
     display: inline-block;
 }
 
+.btn {
+    transition: ease 0.25s;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.75;
+}
+
 .div {
     border: 2px outset #5e6462;
     background-color: #6f757e;
