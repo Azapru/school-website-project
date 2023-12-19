@@ -76,9 +76,9 @@ img {
 }
 
 .games {
-    padding: 5px;
+    margin: 5px;
+    border: 4px solid #5e6462;
     border-radius: 15px;
-    background: #5e6462;
     width: 200px;
     height: 150px;
 }
