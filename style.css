@@ -81,6 +81,7 @@ img {
     border-radius: 15px;
     width: 200px;
     height: 150px;
+    display: inline-block;
 }
 
 .div {
@@ -88,11 +89,6 @@ img {
     background-color: #6f757e;
     text-align: center;
     border-radius: 15px;
-}
-
-h1 {
-    color: rgb(255, 255, 255);
-    margin: 15px;
 }
 
 p {
@@ -106,11 +102,41 @@ p {
     padding: 6px;
     border: white 2px solid;
     border-radius: 16px;
-    background-color: #201640;
+    background-color: #1a0c48;
 }
 
 .socials {
     text-align: right;
     position: fixed;
     width: 100%;
+}
+
+.games-shelf {
+    margin-inline: 10%;
+    overflow-x: auto;
+    white-space: nowrap;
+    overflow-y: hidden;
+    border: 4px solid #4b3e73;
+    border-radius: 32px;
+}
+
+.scrollable {
+    display: inline-block;
+    padding: 8px
+}
+
+h1 {
+    color: white;
+    margin-inline: 10%;
+    margin-top: 32px;
+    margin-bottom: 8px;
+    font-weight: 100;
+}
+
+.empty {
+    height: 128px;
+}
+
+.navbar-btn {
+    margin-block: 4px;
 }
