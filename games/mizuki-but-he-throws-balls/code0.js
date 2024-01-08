@@ -28,6 +28,7 @@ gdjs.MainCode.mapOfGDgdjs_9546MainCode_9546GDThrowAreaObjects1Objects = Hashtabl
 gdjs.MainCode.mapOfGDgdjs_9546MainCode_9546GDOnScreenControlsButtonObjects1Objects = Hashtable.newFrom({"OnScreenControlsButton": gdjs.MainCode.GDOnScreenControlsButtonObjects1});
 gdjs.MainCode.mapOfGDgdjs_9546MainCode_9546GDBallObjects1Objects = Hashtable.newFrom({"Ball": gdjs.MainCode.GDBallObjects1});
 gdjs.MainCode.mapOfGDgdjs_9546MainCode_9546GDGoalObjects1Objects = Hashtable.newFrom({"Goal": gdjs.MainCode.GDGoalObjects1});
+gdjs.MainCode.mapOfGDgdjs_9546MainCode_9546GDBallObjects1Objects = Hashtable.newFrom({"Ball": gdjs.MainCode.GDBallObjects1});
 gdjs.MainCode.eventsList0 = function(runtimeScene) {
 
 {
@@ -103,7 +104,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "r");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(8152492);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9452132);
 }
 }
 if (isConditionTrue_0) {
@@ -290,6 +291,29 @@ if (isConditionTrue_0) {
 /* Reuse gdjs.MainCode.GDMizukiObjects1 */
 {for(var i = 0, len = gdjs.MainCode.GDMizukiObjects1.length ;i < len;++i) {
     gdjs.MainCode.GDMizukiObjects1[i].returnVariable(gdjs.MainCode.GDMizukiObjects1[i].getVariables().getFromIndex(0)).setString("down");
+}
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Middle");
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9450052);
+}
+}
+if (isConditionTrue_0) {
+gdjs.MainCode.GDBallObjects1.length = 0;
+
+{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.MainCode.mapOfGDgdjs_9546MainCode_9546GDBallObjects1Objects, gdjs.evtTools.input.getCursorX(runtimeScene, "", 0), gdjs.evtTools.input.getCursorY(runtimeScene, "", 0), "");
+}{for(var i = 0, len = gdjs.MainCode.GDBallObjects1.length ;i < len;++i) {
+    gdjs.MainCode.GDBallObjects1[i].getBehavior("Resizable").setSize(89, 89);
 }
 }}
 

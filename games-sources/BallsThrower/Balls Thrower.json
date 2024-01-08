@@ -25,7 +25,7 @@
     "author": "",
     "windowWidth": 1280,
     "windowHeight": 720,
-    "latestCompilationDirectory": "",
+    "latestCompilationDirectory": "C:\\xampp\\htdocs\\school-website-project\\games\\mizuki-but-he-throws-balls",
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
@@ -1633,7 +1633,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "v1.0.0 | Game by Azapru",
+          "string": "v1.0.1 | Game by Azapru",
           "font": "",
           "textAlignment": "left",
           "characterSize": 12,
@@ -2143,6 +2143,51 @@
                 "animate",
                 "=",
                 "\"down\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "MouseButtonPressed"
+              },
+              "parameters": [
+                "",
+                "Middle"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Ball",
+                "CursorX()",
+                "CursorY()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetSize"
+              },
+              "parameters": [
+                "Ball",
+                "Resizable",
+                "89",
+                "89"
               ]
             }
           ]
