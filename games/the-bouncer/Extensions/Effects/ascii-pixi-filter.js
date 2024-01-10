@@ -1,0 +1,2 @@
+var gdjs;(function(i){i.PixiFiltersTools.registerFilterCreator("Ascii",new class extends i.PixiFiltersTools.PixiFilterCreator{makePIXIFilter(e,r){return new PIXI.filters.AsciiFilter}updatePreRender(e,r){}updateDoubleParameter(e,r,t){const a=e;r==="size"&&(a.size=t)}getDoubleParameter(e,r){const t=e;return r==="size"?t.size:0}updateStringParameter(e,r,t){}updateColorParameter(e,r,t){}getColorParameter(e,r){return 0}updateBooleanParameter(e,r,t){}})})(gdjs||(gdjs={}));
+//# sourceMappingURL=ascii-pixi-filter.js.map
