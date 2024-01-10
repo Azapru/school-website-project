@@ -12,7 +12,7 @@
     "antialisingEnabledOnMobile": false,
     "folderProject": false,
     "orientation": "landscape",
-    "packageName": "com.azapru.thebouncer",
+    "packageName": "com.azapru.zerozerozero",
     "pixelsRounding": false,
     "projectUuid": "c01d0d89-329e-471c-b084-75b5b69cb49d",
     "scaleMode": "linear",
@@ -20,12 +20,12 @@
     "templateSlug": "",
     "useExternalSourceFiles": false,
     "version": "1.0.0",
-    "name": "The Bouncer",
+    "name": "000",
     "description": "",
     "author": "",
     "windowWidth": 1280,
     "windowHeight": 720,
-    "latestCompilationDirectory": "C:\\xampp\\htdocs\\school-website-project\\games\\the-bouncer",
+    "latestCompilationDirectory": "C:\\xampp\\htdocs\\school-website-project\\games\\000",
     "maxFPS": 0,
     "minFPS": 20,
     "verticalSync": false,
@@ -172,7 +172,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.7130377630690449,
+        "zoomFactor": 0.9610368693714789,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -506,7 +506,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "v1.0.1 | Game by Azapru",
+          "string": "v1.0.2 | Game by Azapru",
           "font": "",
           "textAlignment": "center",
           "characterSize": 12,
@@ -575,6 +575,15 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "PreloadMusic"
+              },
+              "parameters": [
+                "",
+                "assets\\bg.wav"
+              ]
+            },
             {
               "type": {
                 "value": "Physics2::SetStatic"

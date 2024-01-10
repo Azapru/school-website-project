@@ -34,7 +34,8 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("Block"), gdjs.GameCode.GDBlockObjects1);
-{for(var i = 0, len = gdjs.GameCode.GDBlockObjects1.length ;i < len;++i) {
+{gdjs.evtTools.sound.preloadMusic(runtimeScene, "assets\\bg.wav");
+}{for(var i = 0, len = gdjs.GameCode.GDBlockObjects1.length ;i < len;++i) {
     gdjs.GameCode.GDBlockObjects1[i].getBehavior("Physics2").setStatic();
 }
 }}
@@ -53,7 +54,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.getSceneInstancesCount((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.GameCode.mapOfEmptyGDInfoTextObjects) == 1;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(8088972);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9278068);
 }
 }
 }
@@ -107,7 +108,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.physics2.objectsCollide(gdjs.GameCode.mapOfGDgdjs_9546GameCode_9546GDBlockObjects1Objects, "Physics2", gdjs.GameCode.mapOfGDgdjs_9546GameCode_9546GDBouncerObjects1Objects, false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9336524);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9281772);
 }
 }
 if (isConditionTrue_0) {
@@ -130,7 +131,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.physics2.objectsCollide(gdjs.GameCode.mapOfGDgdjs_9546GameCode_9546GDBlockObjects1Objects, "Physics2", gdjs.GameCode.mapOfGDgdjs_9546GameCode_9546GDWallsObjects1Objects, false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9033876);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9283188);
 }
 }
 if (isConditionTrue_0) {
@@ -149,7 +150,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.physics2.objectsCollide(gdjs.GameCode.mapOfGDgdjs_9546GameCode_9546GDBlockObjects1Objects, "Physics2", gdjs.GameCode.mapOfGDgdjs_9546GameCode_9546GDBlockObjects1Objects, false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9445452);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9282628);
 }
 }
 if (isConditionTrue_0) {
