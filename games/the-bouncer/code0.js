@@ -9,8 +9,11 @@ gdjs.GameCode.GDScoreTextObjects1= [];
 gdjs.GameCode.GDScoreTextObjects2= [];
 gdjs.GameCode.GDVerObjects1= [];
 gdjs.GameCode.GDVerObjects2= [];
+gdjs.GameCode.GDInfoTextObjects1= [];
+gdjs.GameCode.GDInfoTextObjects2= [];
 
 
+gdjs.GameCode.mapOfEmptyGDInfoTextObjects = Hashtable.newFrom({"InfoText": []});
 gdjs.GameCode.mapOfGDgdjs_9546GameCode_9546GDBlockObjects1Objects = Hashtable.newFrom({"Block": gdjs.GameCode.GDBlockObjects1});
 gdjs.GameCode.mapOfGDgdjs_9546GameCode_9546GDBouncerObjects1Objects = Hashtable.newFrom({"Bouncer": gdjs.GameCode.GDBouncerObjects1});
 gdjs.GameCode.mapOfGDgdjs_9546GameCode_9546GDBlockObjects1Objects = Hashtable.newFrom({"Block": gdjs.GameCode.GDBlockObjects1});
@@ -30,8 +33,41 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("Block"), gdjs.GameCode.GDBlockObjects1);
+{for(var i = 0, len = gdjs.GameCode.GDBlockObjects1.length ;i < len;++i) {
+    gdjs.GameCode.GDBlockObjects1[i].getBehavior("Physics2").setStatic();
+}
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.getSceneInstancesCount((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.GameCode.mapOfEmptyGDInfoTextObjects) == 1;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(8088972);
+}
+}
+}
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("Block"), gdjs.GameCode.GDBlockObjects1);
+gdjs.copyArray(runtimeScene.getObjects("InfoText"), gdjs.GameCode.GDInfoTextObjects1);
 {gdjs.evtTools.sound.playMusic(runtimeScene, "assets\\bg.wav", true, 50, 1);
 }{gdjs.evtTools.input.hideCursor(runtimeScene);
+}{for(var i = 0, len = gdjs.GameCode.GDBlockObjects1.length ;i < len;++i) {
+    gdjs.GameCode.GDBlockObjects1[i].getBehavior("Physics2").setDynamic();
+}
+}{for(var i = 0, len = gdjs.GameCode.GDInfoTextObjects1.length ;i < len;++i) {
+    gdjs.GameCode.GDInfoTextObjects1[i].deleteFromScene(runtimeScene);
+}
 }}
 
 }
@@ -302,6 +338,8 @@ gdjs.GameCode.GDScoreTextObjects1.length = 0;
 gdjs.GameCode.GDScoreTextObjects2.length = 0;
 gdjs.GameCode.GDVerObjects1.length = 0;
 gdjs.GameCode.GDVerObjects2.length = 0;
+gdjs.GameCode.GDInfoTextObjects1.length = 0;
+gdjs.GameCode.GDInfoTextObjects2.length = 0;
 
 gdjs.GameCode.eventsList0(runtimeScene);
 

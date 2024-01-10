@@ -25,7 +25,7 @@
     "author": "",
     "windowWidth": 1280,
     "windowHeight": 720,
-    "latestCompilationDirectory": "",
+    "latestCompilationDirectory": "C:\\xampp\\htdocs\\school-website-project\\games\\the-bouncer",
     "maxFPS": 0,
     "minFPS": 20,
     "verticalSync": false,
@@ -172,7 +172,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 1.5289132892233346,
+        "zoomFactor": 0.7130377630690449,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -336,6 +336,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "InfoText",
+          "persistentUuid": "70c087e3-72ab-4b1a-8888-187bfbf3e0aa",
+          "width": 0,
+          "x": 347,
+          "y": 307,
+          "zOrder": 19,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -491,10 +506,31 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "v1.0.0 | Game by Azapru",
+          "string": "v1.0.1 | Game by Azapru",
           "font": "",
           "textAlignment": "center",
           "characterSize": 12,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": true,
+          "name": "InfoText",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Touch To Start",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 80,
           "color": {
             "b": 255,
             "g": 255,
@@ -518,6 +554,9 @@
             "objectName": "ScoreText"
           },
           {
+            "objectName": "InfoText"
+          },
+          {
             "objectName": "Ver"
           }
         ]
@@ -538,6 +577,48 @@
           "actions": [
             {
               "type": {
+                "value": "Physics2::SetStatic"
+              },
+              "parameters": [
+                "Block",
+                "Physics2"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "MouseButtonReleased"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ]
+            },
+            {
+              "type": {
+                "value": "SceneInstancesCount"
+              },
+              "parameters": [
+                "InfoText",
+                "InfoText",
+                "=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
                 "value": "PlayMusic"
               },
               "parameters": [
@@ -553,6 +634,24 @@
                 "value": "CacheSouris"
               },
               "parameters": [
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Physics2::SetDynamic"
+              },
+              "parameters": [
+                "Block",
+                "Physics2"
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "InfoText",
                 ""
               ]
             }
