@@ -104,7 +104,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "r");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9505340);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9452132);
 }
 }
 if (isConditionTrue_0) {
@@ -305,7 +305,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Middle");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9513276);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9450052);
 }
 }
 if (isConditionTrue_0) {
