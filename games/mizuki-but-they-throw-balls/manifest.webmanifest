@@ -1,0 +1,12 @@
+{
+  "name": "Mizuki But They Throw Balls",
+  "short_name": "Mizuki But They Throw Balls",
+  "id": "com.azapru.mizuki",
+  "description": "",
+  "orientation": "landscape",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "black",
+  "categories": ["games", "entertainment"],
+  "icons": []
+}
