@@ -1,7 +1,6 @@
 const queryParams = new URLSearchParams(window.location.search);
 const id = queryParams.get("id");
-
-
+var rawJson = ""
 
 if (id != null) {
     fetch("../games/"+id+".json")
@@ -15,7 +14,11 @@ if (id != null) {
             document.getElementById("game-cover").src = "../games/"+id+".png";
             document.getElementById("play-btn-link").href = "../games/"+id+"/";
         })
-        .catch(error => console.error('Error reading JSON:', error));
+        .catch(error => {
+            document.getElementById("frame").remove();
+            document.getElementById("body").innerHTML = "<h1 style='color: red'>Error: this game ID does not exist.</h1>\n<a href='../'><img src='../assets/close.png' class='close-btn btn'></a>"
+        })
 } else {
-    console.log("bad")
+    document.getElementById("frame").remove();
+    document.getElementById("body").innerHTML = "<h1 style='color: red'>Error: this game ID does not exist.</h1>\n<a href='../'><img src='../assets/close.png' class='close-btn btn'></a>"
 }
