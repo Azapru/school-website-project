@@ -1,41 +1,47 @@
+.frame {
+    margin: 10%;
+    padding: 32px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 4px solid #4b3e73;
+    border-radius: 32px;
+}
+
+.play-btn {
+    margin-top: 16px;
+    background-color: #96ff96;
+    border: 4px solid #304c30;
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+    color: #304c30;
+    border-radius: 15px;
+    user-select: none;
+}
+
+#play-btn-link {
+    text-decoration: none;
+}
+
+.paragraph {
+    display: flex;
+}
+
+h1 {
+    color: white;
+    font-weight: 400;
+    margin-bottom: 8px;
+    margin-left: 8px;
+}
+
+.game-title {
+    font-size: 48px;
+}
+
 * {
     padding: 0;
     margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.dropdown-content a:hover {background-color: #838383;}
-.dropdown:hover .dropdown-content {display: block;}
-.dropdown:hover .dropbtn {background-color: #41377a;}
-
-.dropbtn {
-    background-color: #2B2451;
-    color: #a7c0ff;
-    padding: 16px;
-    font-size: 16px;
-    border: 2px #6B87CC solid;
-    border-radius: 15px;
-}
-
-.dropdown {
-    display: inline-block;
-    border-radius: 15px;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #cacaca;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
 }
 
 body {
@@ -79,8 +85,8 @@ img {
     margin: 5px;
     border: 4px solid #5e6462;
     border-radius: 15px;
-    width: 200px;
-    display: inline-block;
+    width: 40%;
+    height:fit-content;
 }
 
 .btn {
@@ -131,14 +137,6 @@ p {
 .scrollable {
     display: inline-block;
     padding: 8px
-}
-
-h1 {
-    color: white;
-    margin-inline: 10%;
-    margin-top: 32px;
-    margin-bottom: 8px;
-    font-weight: 100;
 }
 
 .empty {
