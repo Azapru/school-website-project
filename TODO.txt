@@ -1,4 +1,2 @@
 fix thumbnails for FiZA and flappy bird (i will when the games will have an "actual gameplay", if not i'll just remove them...)
-game profiles
-games search
 "some banner at the bottom"?
