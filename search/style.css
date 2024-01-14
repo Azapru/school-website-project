@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    color: white;
+    margin-left: 32px;
+    font-weight: 100;
+}
+
+.game-thumbnail {
+    margin-left: 19.4%;
+    border: 4px solid #5e6462;
+    border-radius: 15px;
+    width: 128px;
+    display: inline-block;
+}
+
+.game {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    align-items: center;
+    padding-bottom: 8px;
+}
+
+.games-list {
+    text-align: left;
+}
+
+.close-btn {
+    position: fixed;
+    right: 16px;
+    top: 11px;
+}
+
+.search {
+    background-color: #001223;
+    border: #887ec0 2px solid;
+    border-radius: 16px;
+    color: #d7d1fa;
+    padding: 8px;
+    width: 60%;
+    user-select: none;
+    margin-top: 64px;
+    margin-bottom: 16px;
+}
+
+.search:focus {
+    outline: none;
+}
+
+body {
+    background-color: #001223;
+    text-align: center;
+}
+
+button {
+    background-color: #2B2451;
+    color: #a7c0ff;
+    padding: 16px;
+    font-size: 16px;
+    border: 2px #6B87CC solid;
+    border-radius: 15px;
+}
+
+header {
+    background-color: #32245d;
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+nav {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color: #201640;
+    text-align: center;
+    width: 100%;
+}
+
+section {
+    padding: 20px;
+}
+
+img {
+    margin: 5px;
+}
+
+.btn {
+    transition: ease 0.25s;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.75;
+}
+
+.div {
+    border: 2px outset #5e6462;
+    background-color: #6f757e;
+    text-align: center;
+    border-radius: 15px;
+}
+
+p {
+    color: rgb(255, 255, 255);
+    padding: 15px;
+}
+
+.social-icons {
+    width: 48px;
+    margin: 4px;
+    padding: 6px;
+    border: white 2px solid;
+    border-radius: 16px;
+    background-color: #1a0c48;
+}
+
+.socials {
+    text-align: right;
+    position: fixed;
+}
+
+.games-shelf {
+    margin-inline: 10%;
+    overflow-x: auto;
+    white-space: nowrap;
+    overflow-y: hidden;
+    border: 4px solid #4b3e73;
+    border-radius: 32px;
+}
+
+.scrollable {
+    display: inline-block;
+    padding: 8px
+}
+
+.empty {
+    height: 128px;
+}
+
+.navbar-btn {
+    margin-block: 4px;
+}
+
