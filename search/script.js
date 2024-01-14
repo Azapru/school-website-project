@@ -12,7 +12,7 @@ fetch("../games/games.json")
     for (let i = 0; i < gamesList.length; i++) {
         // List every looped game
         results.innerHTML += `
-            <a id="${gamesList[i][0]}" class="btn game" href="../games/${gamesList[i][0]}/">
+            <a id="${gamesList[i][0]}" class="btn game" href="../view-game/?id=${gamesList[i][0]}">
             <img src="../games/${gamesList[i][0]}.png" class="game-thumbnail">
             <h2>${gamesList[i][1]}</h2>
             </a>
