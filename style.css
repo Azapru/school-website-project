@@ -148,3 +148,16 @@ h1 {
 .navbar-btn {
     margin-block: 4px;
 }
+
+.search {
+    position: fixed;
+    right: 16px;
+    top: 11px;
+    background-color: #001223;
+    border: #887ec0 2px solid;
+    border-radius: 16px;
+    color: #d7d1fa;
+    padding: 8px;
+    width: 20%;
+    user-select: none;
+}
