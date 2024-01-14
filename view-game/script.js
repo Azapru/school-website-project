@@ -13,6 +13,8 @@ if (id != null) {
             document.getElementById("game-desc").innerText = description;
             document.getElementById("game-cover").src = "../games/"+id+".png";
             document.getElementById("play-btn-link").href = "../games/"+id+"/";
+
+            document.title = name
         })
         .catch(error => {
             document.getElementById("frame").remove();
