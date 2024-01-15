@@ -1,11 +1,13 @@
+const queryParams = new URLSearchParams(window.location.search);
+var search_query = queryParams.get("search_query");
 var results = document.getElementById("games-list")
 var searchBox = document.getElementById("search")
 var gamesList = []
 
 // Fetch games list
 fetch("../games/games.json")
-  .then(response => response.json())
-  .then(data => {
+.then(response => response.json())
+.then(data => {
     gamesList = data.games;
 
     // Loop through every game
@@ -18,6 +20,9 @@ fetch("../games/games.json")
             </a>
         `
     }
+
+    searchBox.value = search_query
+    search()
 })
 .catch(error => console.error('Error fetching JSON:', error));
 
@@ -37,7 +42,7 @@ function search() {
 }
 
 
-// Auto-focus search bar (god i hate when website don't do that)
+// Auto-focus search bar (god i hate when websites don't do that)
 document.addEventListener("DOMContentLoaded", function() {
     searchBox.focus();
 });
