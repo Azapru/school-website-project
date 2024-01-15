@@ -172,8 +172,30 @@ h1 {
     border-radius: 16px;
     color: #d7d1fa;
     padding: 8px;
-    height: 22px;
-    width: 22px;
+    height: 42px;
+    width: 42px;
     user-select: none;
     text-align: center;
+}
+
+.search-frame {
+    right: 16px;
+    top: 58px;
+    padding: 8px;
+    position: fixed;
+    width: 20%;
+    border: #887ec0 2px solid;
+    border-radius: 16px;
+    background-color: #001223;
+    color: #d7d1fa;
+    display: none;
+}
+
+.game-result {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    display: flex;
 }

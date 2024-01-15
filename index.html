@@ -14,9 +14,12 @@
     </div>
 
     <form action="search/">
-        <input autocomplete="off" type="text" name="search_query" class="search" placeholder="Quick search... (Enter for full)"></input>
-        <div class="search-btn">></div>
+        <input oninput="search_games()" autocomplete="off" type="text" name="search_query" class="search" id="search" placeholder="Quick search... (Enter for full)">
+        <button class="search-btn btn">></button>
     </form>
+    <div class="search-frame btn" id="search-frame">
+
+    </div>
 
     <header>
         <img src="assets/logo.png" alt="logo">
@@ -96,4 +99,6 @@
 
         <div class="empty"></div>
     </div>
+    <script src="script.js"></script>
+</body>
 </html>
