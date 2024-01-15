@@ -1,5 +1,6 @@
 const queryParams = new URLSearchParams(window.location.search);
 const id = queryParams.get("id");
+const back = queryParams.get("back")
 var rawJson = ""
 
 if (id != null) {
@@ -23,4 +24,10 @@ if (id != null) {
 } else {
     document.getElementById("frame").remove();
     document.getElementById("body").innerHTML = "<h1 style='color: red'>Error: this game ID does not exist.</h1>\n<a href='../'><img src='../assets/close.png' class='close-btn btn'></a>"
+}
+
+if (back == "search") {
+    document.getElementById("close-btn").href = "../search"
+} else {
+    document.getElementById("close-btn").href = "../"
 }
