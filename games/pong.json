@@ -1,4 +1,9 @@
 {
     "name": "Pong",
-    "description": "Play Pong, the classic tennis-like game that started the video games industry. Control the paddle with mouse or keyboard and try to beat your opponent by scoring as much points as possible!"
+    "description": "Play Pong, the classic tennis-like game that started the video games industry. Control the paddle with mouse or keyboard and try to beat your opponent by scoring as much points as possible!",
+    "reviews": [
+        ["JohnDoe", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius sunt doloribus vel, velit totam dicta eveniet illum debitis illo error voluptas impedit veniam consequuntur aperiam accusantium perferendis eaque nam vitae."],
+        ["User8220", "This game SUCKS!!!"],
+        []
+    ]
 }

@@ -26,25 +26,26 @@
     </header>
 
     <nav>
-        <a><button class="navbar-btn">Home</button></a>
+        <a><button class="navbar-btn btn">Home</button></a>
         <div class="dropdown">
-            <button class="dropbtn navbar-btn">Categories</button>
+            <button class="dropbtn navbar-btn btn">Categories</button>
             <div class="dropdown-content">
-                <a href="">category1</a>
-                <a href="">category2</a>
-                <a href="">category3</a>
+                <a href="#featured">Featured</a>
+                <a href="#casual">Casual</a>
+                <a href="#arcade">Arcade</a>
+                <a href="#platformer">Platformer</a>
             </div>
         </div>
-        <a><button class="navbar-btn">About</button></a>
+        <a><button class="navbar-btn btn">About</button></a>
         <div class="dropdown">
-            <button class="dropbtn navbar-btn">Contact</button>
+            <button class="dropbtn navbar-btn btn">Contact</button>
             <div class="dropdown-content">
                 <a href="">Phone</a>
                 <a href="">E-mail</a>
             </div>
         </div>
             <div class="dropdown">
-            <button class="dropbtn navbar-btn">News</button>
+            <button class="dropbtn navbar-btn btn">News</button>
             <div class="dropdown-content">
                 <a href="">News</a>
                 <a href="">Update logs</a>
@@ -53,47 +54,36 @@
     </nav>
     
     <div class="games-listing">
-        <h1>Featured: </h1>
-        <div class="games-shelf">
+        <h1 id="featured">Featured: </h1>
+        <div class="games-shelf featured">
             <div class="scrollable">
                 <a href="view-game/?id=000"><img src="games/000.png" alt="Game" class="games btn"></a>
                 <a href="view-game/?id=mizuki-but-they-throw-balls"><img src="games/mizuki-but-they-throw-balls.png" alt="Game" class="games btn"></a>
                 <a href="view-game/?id=xiao-eating-snow"><img src="games/xiao-eating-snow.png" alt="Game" class="games btn"></a>
-                <a href="view-game/?id=mouse-aim-tester"><img src="games/mouse-aim-tester.png" alt="Game" class="games btn"></a>
+            </div>
+        </div>
+        
+        <h1 id="casual">Casual: </h1>
+        <div class="games-shelf">
+            <div class="scrollable">
+                <a href="view-game/?id=mizuki-but-they-throw-balls"><img src="games/mizuki-but-they-throw-balls.png" alt="Game" class="games btn"></a>
             </div>
         </div>
 
-        <h1>Newly Added:</h1>
+        <h1 id="arcade">Arcade: </h1>
         <div class="games-shelf">
             <div class="scrollable">
                 <a href="view-game/?id=pong"><img src="games/pong.png" alt="Game" class="games btn"></a>
                 <a href="view-game/?id=000"><img src="games/000.png" alt="Game" class="games btn"></a>
                 <a href="view-game/?id=xiao-eating-snow"><img src="games/xiao-eating-snow.png" alt="Game" class="games btn"></a>
                 <a href="view-game/?id=mouse-aim-tester"><img src="games/mouse-aim-tester.png" alt="Game" class="games btn"></a>
-                <a href="view-game/?id=azure-finalist"><img src="games/azure-finalist.png" alt="Game" class="games btn"></a>
-                <a href="view-game/?id=mizuki-but-they-throw-balls"><img src="games/mizuki-but-they-throw-balls.png" alt="Game" class="games btn"></a>
-                <img src="assets/placeholder-game.png" alt="Game" class="games btn">
-                <img src="assets/placeholder-game.png" alt="Game" class="games btn">
-                <img src="assets/placeholder-game.png" alt="Game" class="games btn">
-                <img src="assets/placeholder-game.png" alt="Game" class="games btn">
-                <img src="assets/placeholder-game.png" alt="Game" class="games btn">
-                <img src="assets/placeholder-game.png" alt="Game" class="games btn">
             </div>
         </div>
-        
-        <h1>Category 1: </h1>
+
+        <h1 id="platformer">Platformer: </h1>
         <div class="games-shelf">
             <div class="scrollable">
-                <img src="assets/placeholder-game.png" alt="Game" class="games btn">
-                <img src="assets/placeholder-game.png" alt="Game" class="games btn">
-                <img src="assets/placeholder-game.png" alt="Game" class="games btn">
-                <img src="assets/placeholder-game.png" alt="Game" class="games btn">
-                <img src="assets/placeholder-game.png" alt="Game" class="games btn">
-                <img src="assets/placeholder-game.png" alt="Game" class="games btn">
-                <img src="assets/placeholder-game.png" alt="Game" class="games btn">
-                <img src="assets/placeholder-game.png" alt="Game" class="games btn">
-                <img src="assets/placeholder-game.png" alt="Game" class="games btn">
-                <img src="assets/placeholder-game.png" alt="Game" class="games btn">
+                <a href="view-game/?id=azure-finalist"><img src="games/azure-finalist.png" alt="Game" class="games btn"></a>
             </div>
         </div>
 

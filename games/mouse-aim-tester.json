@@ -1,4 +1,9 @@
 {
     "name": "Mouse Aim Tester",
-    "description": "Test your mouse aiming and accuracy skills!\n\nClick the balls you see on the screen as fast as you can!"
+    "description": "Test your mouse aiming and accuracy skills!\n\nClick the balls you see on the screen as fast as you can!",
+    "reviews": [
+        ["JohnDoe", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius sunt doloribus vel, velit totam dicta eveniet illum debitis illo error voluptas impedit veniam consequuntur aperiam accusantium perferendis eaque nam vitae."],
+        ["User8220", "This game SUCKS!!!"],
+        []
+    ]
 }

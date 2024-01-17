@@ -1,4 +1,9 @@
 {
     "name": "AZURE FINALIST",
-    "description": "Cancelled version of Azapru's 'AZURE FINALIST' game."
+    "description": "Cancelled version of Azapru's 'AZURE FINALIST' game.",
+    "reviews": [
+        ["JohnDoe", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius sunt doloribus vel, velit totam dicta eveniet illum debitis illo error voluptas impedit veniam consequuntur aperiam accusantium perferendis eaque nam vitae."],
+        ["User8220", "This game SUCKS!!!"],
+        []
+    ]
 }

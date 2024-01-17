@@ -1,4 +1,9 @@
 {
     "name": "[000]",
-    "description": "___DO___NOT___LET___ANY___FALL___."
+    "description": "___DO___NOT___LET___ANY___FALL___.",
+    "reviews": [
+        ["JohnDoe", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius sunt doloribus vel, velit totam dicta eveniet illum debitis illo error voluptas impedit veniam consequuntur aperiam accusantium perferendis eaque nam vitae."],
+        ["User8220", "This game SUCKS!!!"],
+        []
+    ]
 }
